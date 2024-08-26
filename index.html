@@ -3,7 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Rede Social</title>
+   <div><!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exemplo de Abas</title>
+        <style>
+            /* Estilo das abas */
+            .tab {
+                overflow: hidden;
+                background-color: #f1f1f1;
+            }
+    
+            .tab button {
+                background-color: #ddd;
+                border: none;
+                outline: none;
+                padding: 10px 20px;
+                cursor: pointer;
+                float: left;
+            }
+    
+            .tab button.active {
+                background-color: #ccc;
+            }
+    
+            /* Estilo do conteúdo das abas */
+            .tabcontent {
+                display: none;
+                padding: 20px;
+                border-top: none;
+            }
+    
+            .tabcontent.show {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Abas</title>
+    <style>
+        /* Estilo das abas */
+        .tab {
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        .tab button {
+            background-color: #ddd;
+            border: none;
+            outline: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            float: left;
+        }
+
+        .tab button.active {
+            background-color: #ccc;
+        }
+
+        /* Estilo do conteúdo das abas */
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border-top: none;
+        }
+
+        .tabcontent.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Biologia')">Biologia</button>
+        <button class="tablinks" onclick="openTab(event, 'Robotica')">Robotica</button>
+        <button class="tablinks" onclick="openTab(event, 'História')">História</button>
+        <button class="tablinks" onclick="openTab(event, 'Matemática')">Matemática</button>
+        <button class="tablinks" onclick="openTab(event, 'Educação Financeira')">Educação.F</button>
+    </div>
+
+    <div id="Biologia" class="tabcontent">
+        <h3>Biologia</h3>
+        <p>ciência que estuda a vida e os organismos vivos, sua estrutura, crescimento, funcionamento, reprodução, origem, evolução, distribuição, bem como suas relações com o ambiente e entre si; biociência, ciências biológicas [Compreende várias outras ciências especializadas, como, p.ex., a ecologia, a bioquímica, a genética, a zoologia e a botânica.].</p>
+    </div>
+    <div id="Robotica" class="tabcontent">
+        <h3>Robotica</h3>
+        <p>Robótica é um ramo educacional e tecnológico que trata de sistemas compostos por partes mecânicas automáticas em conjunto com circuitos integrados, tornando sistemas mecânicos motorizados controlados por circuitos elétricos e inteligência computacional. A robótica é objeto de estudo de diversas áreas: computação, aeroespacial, mecânica, automação, elétrica, etc.</p>
+    </div>
+    <div id="História" class="tabcontent">
+        <h3>História</h3>
+        <p>História (do grego antigo ἱστορία, transl.: historía, que significa "pesquisa", "conhecimento advindo da investigação")[1] é o estudo e a documentação sistemática do passado humano.[2] O período de acontecimentos anteriores à invenção dos sistemas de escrita é considerado pré-história.[3] "História" é um termo abrangente que abarca eventos passados, bem como a memória, a descoberta, a coleção, a organização, a apresentação e a interpretação destes eventos. Os historiadores buscam o conhecimento do passado usando fontes históricas, como documentos escritos, relatos orais, arte e artefatos materiais e marcadores ecológicos.[</p>
+    </div>
+    <div id="Matemática" class="tabcontent">
+        <h3>Matemática</h3>
+        <p>Matemática é uma área do conhecimento que inclui os tópicos dos números, fórmulas e estruturas relacionadas, formas e os espaços em que estão contidos, e quantidades e suas mudanças. </p>
+    </div>
+    <div id="Educação Financeira" class="tabcontent">
+        <h3>Educação Financeira</h3>
+        <p>A educação financeira é uma área transversal e Interdisciplinar cujo propósito é auxiliar indivíduos na escolha de seus rendimentos, no consumo sustentável, em suas decisões sobre investimentos, e na prevenção de situações problemáticas; não deve ser confundida com a matemática financeira, enquanto a primeira se trata de uma área que comunica com as outras como a economia, biologia (meio ambiente e saúde), história, sociologia, geografia, etc., a segunda é específica da matemática.</p>
+    </div>
+
+
+    
+
+    <script>
+        function openTab(evt, tabName) {
+            // Esconde todos os conteúdos das abas
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";  
+            }
+            // Remove a classe 'active' dos botões das abas
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            // Mostra o conteúdo da aba atual e adiciona a classe 'active' ao botão da aba atual
+            document.getElementById(tabName).style.display = "block";  
+            evt.currentTarget.className += " active";
+        }
+
+        // Abre a aba "Home" por padrão
+        document.querySelector(".tablinks").click();
+    </script>
+
+</body>
+</html>
+   
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -54,7 +189,7 @@
 <body>
 
     <div class="header">
-        <h1>Minha Rede Social</h1>
+      
     </div>
 
     <div class="container">
@@ -67,12 +202,12 @@
         </div>
 
         <div class="post">
-            <h3>Postagem Título</h3>
+            <h3>Me apresentando</h3>
             <p>Conteúdo da postagem. Aqui você pode adicionar qualquer informação relevante para a sua rede social.</p>
         </div>
 
         <div class="post">
-            <h3>Outra Postagem</h3>
+            <h3>Hobbies</h3>
             <p>Mais conteúdo. Sinta-se à vontade para adicionar mais postagens conforme necessário.</p>
         </div>
     </div>
@@ -88,7 +223,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minha Rede Social</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -157,7 +292,7 @@
         </div>
 
         <div class="post">
-            <h3>Outra Postagem</h3>
+            <h3>Hobbies</h3>
             <p>Mais conteúdo. Sinta-se à vontade para adicionar mais postagens conforme necessário.</p>
         </div>
     </div>
@@ -498,8 +633,7 @@
         </div>
 
         <div class="post">
-            <h3>Outra Postagem</h3>
-            <p>Mais conteúdo. Sinta-se à vontade para adicionar mais postagens conforme necessário.</p>
+      
         </div>
     </div>
 
@@ -509,3 +643,4 @@
 
 </body>
 </html>
+ 
